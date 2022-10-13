@@ -37,7 +37,7 @@ Index.getLayout = function getLayout(page) {
             <a>History</a>
           </Link>
         </Links>
-        <div style={{'background-color':'orange', 'color':'white'}}><Links>
+        <div style={{'backgroundColor':'orange', 'color':'white'}}><Links>
           <Link href='/aboutus/awards'>
             <a>Honour and Awards</a>
           </Link>

@@ -3,7 +3,7 @@ import Sidebar from '../../components/sidebar'
 import Links from '../../components/links'
 import Link from 'next/link'
 import Navheader from '../../components/navheader'
-export default function Index() {
+export default function Page() {
   return (
     <section className="green">
       {/* Add accent color to headings */}
@@ -21,10 +21,6 @@ export default function Index() {
         div {
             overflow:hidden;
             padding-left:1em;
-        }
-        
-        h2, h3 {
-          color:green;
         }
       `}</style>
       <h2>Guide Dogs</h2>
@@ -50,13 +46,13 @@ export default function Index() {
   )
 }
 
-Index.getLayout = function getLayout(page) {
+Page.getLayout = function getLayout(page) {
   return (
     <Layout>
         <Navheader/>
       <Sidebar>
         {/* Add accent color to active link */}
-        <div style={{'background-color':'green', 'color':'white'}}><Links>
+        <div style={{'backgroundColor':'green', 'color':'white'}}><Links>
           <Link href='/services'>
             <a>Guide Dogs</a>
           </Link>
