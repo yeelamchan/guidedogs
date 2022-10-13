@@ -26,6 +26,7 @@
       "static/chunks/pages/_error.js"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "/services/fostering": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -33,11 +34,19 @@
     "/services/breeding": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
+=======
+    "/services/breeding": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+>>>>>>> 5134a49556997c51ab09de18c36a3faecf729b79
       "static/chunks/pages/services/breeding.js"
     ],
     "/services/fostering": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
+<<<<<<< HEAD
+>>>>>>> 5134a49556997c51ab09de18c36a3faecf729b79
+=======
 >>>>>>> 5134a49556997c51ab09de18c36a3faecf729b79
       "static/chunks/pages/services/fostering.js"
     ]
