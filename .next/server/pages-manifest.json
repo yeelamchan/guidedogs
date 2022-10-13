@@ -2,15 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "/services/fostering": "pages/services/fostering.js"
-=======
-  "/services/fostering": "pages/services/fostering.js",
-  "/services/breeding": "pages/services/breeding.js"
->>>>>>> 5134a49556997c51ab09de18c36a3faecf729b79
-=======
-  "/services/fostering": "pages/services/fostering.js",
-  "/services/breeding": "pages/services/breeding.js"
->>>>>>> 5134a49556997c51ab09de18c36a3faecf729b79
+  "/shop": "pages/shop.js"
 }

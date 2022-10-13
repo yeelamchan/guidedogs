@@ -2,7 +2,7 @@ import styles from './navheader.module.css'
 import Link from 'next/link'
 export default function Navheader() {
   return (
-    <div>
+    <section>
         <h1 className={styles.title}>
           <Link href="/">
             HKGDA
@@ -33,6 +33,6 @@ export default function Navheader() {
             <a className={styles.links}>Contact Us</a>
         </Link>
     </nav>
-    </div>
+    </section>
   )
 }

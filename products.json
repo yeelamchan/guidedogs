@@ -1,0 +1,75 @@
+{"products":[
+{
+	"id" : 1,
+	"slug": "2022-calendar-on-sale",
+	"name" : "2022 Calendar on Sale",
+	"price" : {"old_price": 100, "new_price": 68},
+	"image": "https://www.guidedogs.org.hk/wp-content/uploads/2022/02/image001-1-768x768.jpg",
+	"information" : {
+		"blurb": "The 2022 calendar set includes:\n\n1 x Desk Calendar (A or B style)\n5 x Stickers\n3 x Postcards\n*FREE shipping by HK Post*",
+		"description": "Don’t miss the chance to get our 2022 calendar at a discounted price of $68! The calendar also comes with additional merchandise items of 5 adorable doggie stickers and a set of 3 postcards.Remarks:Regular shipping fee is included; the calendar will be shipped to your HK address by HK Post within 7-10 business days (please provide your postal address on the checkout page). You may also opt for SF Express for faster delivery but please note you will be responsible for SF Express shipping fee and it will need to be settled upon receipt of goods.– Stickers will be randomly distributed– Sticker size: die-cut, size variesPostcard size: 14.8cm (L) x 10.5cm (H)– Page material: double copper paper– Number of pages: 7– All items are non-refundable and non-exchangeable",
+		"additional_information" : {"type": "A, B", "Size": "24cm (L) x 15cm (H) x 8cm (D)"}
+	},
+	"instock" : 26,
+	"category" : ["All Product","Featured Product"],
+	"type" :["A","B"],
+	"onsale" : true
+},
+{
+	"id" : 2,
+	"slug": "stylish-bandana",
+	"name" : "Stylish Bandana",
+	"price" : {"old_price": 180, "new_price": 120},
+	"image": "https://www.guidedogs.org.hk/wp-content/uploads/2021/12/20211210_180307-e1639455277326-768x956.png",
+	"type_images": {
+		"Stylish Doggies": "https://www.guidedogs.org.hk/wp-content/uploads/2021/12/20211210_180307-e1639455277326-768x956.png",
+		"Colorful Kittens - A": "https://www.guidedogs.org.hk/wp-content/uploads/2021/12/20211210_180320-e1639383750377-765x1024.png",
+		"Colorful Kittens - B": "https://www.guidedogs.org.hk/wp-content/uploads/2021/12/Bandana-03-768x1024.png"
+	},
+	"information" : {
+		"blurb": "A handmade bandana with Velcro closure that gives your furry baby an instant boost of confidence.",
+		"description": "Handmade by a group of talented sewists and their students from local organization “Cheerful Sewciety”, these bandanas come with a Velcro closure which makes it easy to put on and take off. It will give an instant confidence boost to your furry baby!",
+		"additional_information" : {"type": "Stylish Doggies, Colourful Kittens – A, Colourful Kittens – B", "Size": "Medium: Neck measurement 45-50cm x 11cm (Center to point length), Large: Neck measurement 60-65cm x 15.5cm (Center to point length)"}
+	},
+	"instock" : 26,
+	"category" : ["All Product","Featured Product"],
+	"type" :["Stylish Doggies","Colorful Kittens - A","Colorful Kittens - B"],
+	"onsale" : true
+},
+{
+	"id" : 3,
+	"slug": "hkgda-power-bank-10000mah",
+	"name" : "HKGDA Power Bank 10000mAh",
+	"price" : {"old_price": 100, "new_price": 75},
+	"image": "https://www.guidedogs.org.hk/wp-content/uploads/2019/09/PB-001-P.jpg",
+	"information" : {
+		"blurb": "A handmade bandana with Velcro closure that gives your furry baby an instant boost of confidence.",
+		"description": "Handmade by a group of talented sewists and their students from local organization “Cheerful Sewciety”, these bandanas come with a Velcro closure which makes it easy to put on and take off. It will give an instant confidence boost to your furry baby!",
+		"additional_information" : {"type": "Stylish Doggies, Colourful Kittens – A, Colourful Kittens – B", "Size": "Medium: Neck measurement 45-50cm x 11cm (Center to point length), Large: Neck measurement 60-65cm x 15.5cm (Center to point length)"}
+	},
+	"instock" : 0,
+	"category" : ["All Product","Featured Product"],
+	"type" :["Stylish Doggies","Colorful Kittens - A","Colorful Kittens - B"],
+	"onsale" : true
+},
+{
+	"id" : 4,
+	"slug": "coffee-mug-nana",
+	"name" : "Coffee mug – Nana",
+	"price" : {"old_price": 98, "new_price": 73.50},
+	"image": "https://www.guidedogs.org.hk/wp-content/uploads/2019/09/CM001-Na.jpg",
+	"instock" : 26,
+	"category" : ["All Product","HKGDA Daily Supplies"],
+	"onsale" : true
+},
+{
+	"id" : 5,
+	"slug": "hand-made-guide-dog-red-tshirt",
+	"name" : "Hand Made Guide Dog Red T-Shirt",
+	"price" : {"old_price": 240, "new_price": 225},
+	"image": "https://www.guidedogs.org.hk/wp-content/uploads/2019/09/TS-004.jpg",
+	"instock" : 26,
+	"size": ["XS","S","M","L","XL","XXL"],
+	"category" : ["All Product","Featured Products","HKGDA Daily Supplies"],
+	"onsale" : true
+}]}

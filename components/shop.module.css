@@ -1,28 +1,32 @@
 .main {
-    padding: 2vw;
-  }
-  
-  .title,
-  .description {
-    text-align: center;
-  }
-  
-  .content {
-    padding: 0 2vw;
-    font-size: 18px;
-  }
-  
-  @media only screen and (min-width: 768px) {.content div {
-    overflow:hidden;
-  }}
+  padding: 2vw;
+  max-width: 80vw;
+  margin: auto;
+}
 
-  .content div {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 10em);
-    grid-template-rows: 15em;
-  }
-  
-  .content img {
-    height: 70%;
-    width: 100%;
-  }
+.content {
+  padding: 0 2vw;
+  font-size: 18px;
+}
+
+.content div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 10em);
+  column-gap: 20px;
+  justify-content: space-evenly;
+}
+
+.content img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content p {
+  margin: 0px;
+  font-size: smaller;
+}
+
+.content span {
+  font-size: smaller;
+}
