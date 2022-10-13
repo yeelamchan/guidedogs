@@ -2,5 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/shop/product/[id]": "pages/shop/product/[id].js"
+  "/services/fostering": "pages/services/fostering.js",
+  "/services/breeding": "pages/services/breeding.js"
 }

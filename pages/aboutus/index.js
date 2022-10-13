@@ -44,7 +44,7 @@ Index.getLayout = function getLayout(page) {
       <Navheader/>
       <Sidebar>
         {/* Add accent color to active link */}
-        <div style={{'background-color':'orange', 'color':'white'}}><Links>
+        <div style={{'backgroundColor':'orange', 'color':'white'}}><Links>
           <Link href='/aboutus'>
             <a>About Us</a>
           </Link>

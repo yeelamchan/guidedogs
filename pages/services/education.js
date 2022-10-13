@@ -3,7 +3,7 @@ import Sidebar from '../../components/sidebar'
 import Links from '../../components/links'
 import Link from 'next/link'
 import Navheader from '../../components/navheader'
-export default function Index() {
+export default function Page() {
   return (
     <section className="green">
       <h2>Public Education</h2>
@@ -12,7 +12,7 @@ export default function Index() {
   )
 }
 
-Index.getLayout = function getLayout(page) {
+Page.getLayout = function getLayout(page) {
   return (
     <Layout>
         <Navheader/>
@@ -58,7 +58,7 @@ Index.getLayout = function getLayout(page) {
           </Link>
         </Links>
         {/* Add accent color to active link */}
-        <div style={{'background-color':'green', 'color':'white'}}><Links>
+        <div style={{'backgroundColor':'green', 'color':'white'}}><Links>
           <Link href='/services/education'>
             <a>Public Education</a>
           </Link>

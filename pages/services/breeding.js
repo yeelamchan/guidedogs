@@ -3,14 +3,11 @@ import Sidebar from '../../components/sidebar'
 import Links from '../../components/links'
 import Link from 'next/link'
 import Navheader from '../../components/navheader'
-export default function Index() {
+export default function Page() {
   return (
     <section className="green">
       <style jsx>{`
-        div {
-            column-count:2;
-            column-gap:20px;
-        }
+        div {column-count:2;}
 
         div > img {max-width:100%}
       `}</style>
@@ -24,14 +21,14 @@ export default function Index() {
         We are looking for volunteers to become breeding stock holders. For more information, please email info@guidedogs.org.hk.
         </p>
         <div>
-        <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/02/Winci-Wisdom-Eve-Wong-Wifi-1024x683.jpg"/>
-        <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/02/BB-Ivy-with-her-V-litter-puppies-1024x684.jpg"/>
+          <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/02/Winci-Wisdom-Eve-Wong-Wifi-1024x683.jpg"/>
+          <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/02/BB-Ivy-with-her-V-litter-puppies-1024x684.jpg"/>
         </div>
     </section>
   )
 }
 
-Index.getLayout = function getLayout(page) {
+Page.getLayout = function getLayout(page) {
   return (
     <Layout>
         <Navheader/>
@@ -42,7 +39,7 @@ Index.getLayout = function getLayout(page) {
           </Link>
         </Links>
          {/* Add accent color to active link */}
-        <div style={{'background-color':'green', 'color':'white'}}><Links>
+        <div style={{'backgroundColor':'green', 'color':'white'}}><Links>
           <Link href='/services/breeding'>
             <a>Breeding Program</a>
           </Link>
