@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/aboutus": "pages/aboutus.js",
-  "/shop": "pages/shop.js"
+  "/services/fostering": "pages/services/fostering.js",
+  "/services/breeding": "pages/services/breeding.js"
 }

@@ -1,0 +1,28 @@
+.main {
+    padding: 2vw;
+  }
+  
+  .title,
+  .description {
+    text-align: center;
+  }
+  
+  .content {
+    padding: 0 2vw;
+    font-size: 18px;
+  }
+  
+  @media only screen and (min-width: 768px) {.content div {
+    overflow:hidden;
+  }}
+  
+  .content img {
+    width:350px;
+    max-width:80vw;
+    display:block;
+    margin:auto;
+  }
+  
+  .content figcaption {
+    text-align: center;
+  }

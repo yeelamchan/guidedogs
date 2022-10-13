@@ -3,7 +3,7 @@ import Sidebar from '../../components/sidebar'
 import Links from '../../components/links'
 import Link from 'next/link'
 import Navheader from '../../components/navheader'
-export default function Index() {
+export default function Page() {
   return (
     <section className="purple">
       <h2>Volunteer Program</h2>
@@ -12,13 +12,13 @@ export default function Index() {
   )
 }
 
-Index.getLayout = function getLayout(page) {
+Page.getLayout = function getLayout(page) {
   return (
     <Layout>
         <Navheader/>
       <Sidebar>
        {/* Add accent color to active link */}
-        <div style={{'background-color':'purple', 'color':'white'}}><Links>
+        <div style={{'backgroundColor':'purple', 'color':'white'}}><Links>
           <Link href='/supportus'>
             <a>Volunteer Program</a>
           </Link>
