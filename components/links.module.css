@@ -1,0 +1,16 @@
+@media only screen and (min-width: 768px) {
+    .links {
+        width:350px;
+        max-width:20vw;
+    }
+  }
+
+.links {
+    padding:1em;
+    border-bottom: lightgray 1px solid;
+}
+
+.links:hover {
+    color: gray;
+    text-decoration: underline;
+}

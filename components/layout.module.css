@@ -1,0 +1,45 @@
+.main {
+  padding: 2vw;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.content {
+  padding: 0 2vw;
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {.content div {
+  overflow:hidden;
+}}
+
+.content img {
+  width:350px;
+  max-width:80vw;
+  display:block;
+  margin:auto;
+}
+
+.content figcaption {
+  text-align: center;
+}

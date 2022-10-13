@@ -1,0 +1,53 @@
+@media only screen and (min-width: 768px) {
+    .navi {
+        width:350px;
+        max-width:30vw;
+    }
+
+    .content {
+        display: flex;
+    }
+  }
+
+.navi {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding:1em;
+}
+
+.links {
+    padding:0 1em;
+}
+
+.links:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.activepage {
+    background-color: orange;
+}
+
+.inactivepage {
+    background-color: lightgray;
+}
+
+.content {
+    padding: 0 2vw;
+    font-size: 18px;
+}
+
+.content h3 {
+    color: orange;
+}
+
+.content h4 {
+    color:orange;
+}
+
+.content img {
+    width:400px;
+    max-width:80vw;
+    display:block;
+}
