@@ -7,8 +7,8 @@
 	"image": "https://www.guidedogs.org.hk/wp-content/uploads/2022/02/image001-1-768x768.jpg",
 	"information" : {
 		"blurb": "The 2022 calendar set includes:\n\n1 x Desk Calendar (A or B style)\n5 x Stickers\n3 x Postcards\n*FREE shipping by HK Post*",
-		"description": "Don’t miss the chance to get our 2022 calendar at a discounted price of $68! The calendar also comes with additional merchandise items of 5 adorable doggie stickers and a set of 3 postcards.Remarks:Regular shipping fee is included; the calendar will be shipped to your HK address by HK Post within 7-10 business days (please provide your postal address on the checkout page). You may also opt for SF Express for faster delivery but please note you will be responsible for SF Express shipping fee and it will need to be settled upon receipt of goods.– Stickers will be randomly distributed– Sticker size: die-cut, size variesPostcard size: 14.8cm (L) x 10.5cm (H)– Page material: double copper paper– Number of pages: 7– All items are non-refundable and non-exchangeable",
-		"additional_information" : {"type": "A, B", "Size": "24cm (L) x 15cm (H) x 8cm (D)"}
+		"description": "Don’t miss the chance to get our 2022 calendar at a discounted price of $68! The calendar also comes with additional merchandise items of 5 adorable doggie stickers and a set of 3 postcards.\n\nRemarks:\n– Regular shipping fee is included; the calendar will be shipped to your HK address by HK Post within 7-10 business days (please provide your postal address on the checkout page). You may also opt for SF Express for faster delivery but please note you will be responsible for SF Express shipping fee and it will need to be settled upon receipt of goods.\n– Stickers will be randomly distributed\n– Sticker size: die-cut, size varies\n– Postcard size: 14.8cm (L) x 10.5cm (H)\n– Page material: double copper paper\n– Number of pages: 7\n– All items are non-refundable and non-exchangeable",
+		"additional_information" : {"type": "A, B", "size": "24cm (L) x 15cm (H) x 8cm (D)"}
 	},
 	"instock" : 26,
 	"category" : ["All Product","Featured Product"],
@@ -29,11 +29,12 @@
 	"information" : {
 		"blurb": "A handmade bandana with Velcro closure that gives your furry baby an instant boost of confidence.",
 		"description": "Handmade by a group of talented sewists and their students from local organization “Cheerful Sewciety”, these bandanas come with a Velcro closure which makes it easy to put on and take off. It will give an instant confidence boost to your furry baby!",
-		"additional_information" : {"type": "Stylish Doggies, Colourful Kittens – A, Colourful Kittens – B", "Size": "Medium: Neck measurement 45-50cm x 11cm (Center to point length), Large: Neck measurement 60-65cm x 15.5cm (Center to point length)"}
+		"additional_information" : {"type": "Stylish Doggies, Colourful Kittens – A, Colourful Kittens – B", "size": "Medium: Neck measurement 45-50cm x 11cm (Center to point length), Large: Neck measurement 60-65cm x 15.5cm (Center to point length)"}
 	},
 	"instock" : 26,
 	"category" : ["All Product","Featured Product"],
 	"type" :["Stylish Doggies","Colorful Kittens - A","Colorful Kittens - B"],
+	"size": ["Medium", "Large"],
 	"onsale" : true
 },
 {
@@ -43,13 +44,11 @@
 	"price" : {"old_price": 100, "new_price": 75},
 	"image": "https://www.guidedogs.org.hk/wp-content/uploads/2019/09/PB-001-P.jpg",
 	"information" : {
-		"blurb": "A handmade bandana with Velcro closure that gives your furry baby an instant boost of confidence.",
-		"description": "Handmade by a group of talented sewists and their students from local organization “Cheerful Sewciety”, these bandanas come with a Velcro closure which makes it easy to put on and take off. It will give an instant confidence boost to your furry baby!",
-		"additional_information" : {"type": "Stylish Doggies, Colourful Kittens – A, Colourful Kittens – B", "Size": "Medium: Neck measurement 45-50cm x 11cm (Center to point length), Large: Neck measurement 60-65cm x 15.5cm (Center to point length)"}
+		"blurb": "Capacity：3.7V/10000mAh\nInput：USB-A 5V=2A(MAX)\nOutput：Micro USB 5V=2A(MAX)\nSize：75 x 78 x 20 mm\nColour：Pink\nWeight：200g"
 	},
 	"instock" : 0,
 	"category" : ["All Product","Featured Product"],
-	"type" :["Stylish Doggies","Colorful Kittens - A","Colorful Kittens - B"],
+	"type" :["Pink","White","Blue"],
 	"onsale" : true
 },
 {
@@ -68,6 +67,9 @@
 	"name" : "Hand Made Guide Dog Red T-Shirt",
 	"price" : {"old_price": 240, "new_price": 225},
 	"image": "https://www.guidedogs.org.hk/wp-content/uploads/2019/09/TS-004.jpg",
+	"information" : {
+		"additional_information" : {"size": "XS, S, M, L, XL, XXL"}
+	},
 	"instock" : 26,
 	"size": ["XS","S","M","L","XL","XXL"],
 	"category" : ["All Product","Featured Products","HKGDA Daily Supplies"],

@@ -2,13 +2,13 @@ import styles from './navheader.module.css'
 import Link from 'next/link'
 export default function Navheader() {
   return (
-    <section>
-        <h1 className={styles.title}>
-          <Link href="/">
-            HKGDA
-          </Link>
-        </h1>
-        <nav className={styles.navi}>
+    <header>
+      <h1 className={styles.title}>
+        <Link href="/">
+          HKGDA
+        </Link>
+      </h1>
+      <nav className={styles.navi}>
         <Link href={`/aboutus`}>
             <a className={styles.links}>About Us</a>
         </Link>
@@ -32,7 +32,7 @@ export default function Navheader() {
         <Link href={`/contactus`}>
             <a className={styles.links}>Contact Us</a>
         </Link>
-    </nav>
-    </section>
+      </nav>
+    </header>
   )
 }

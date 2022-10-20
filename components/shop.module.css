@@ -1,18 +1,15 @@
 .main {
   padding: 2vw;
-  max-width: 80vw;
-  margin: auto;
 }
 
 .content {
-  padding: 0 2vw;
   font-size: 18px;
 }
 
-.content div {
+.content main {
   display: grid;
   grid-template-columns: repeat(auto-fill, 10em);
-  column-gap: 20px;
+  gap: 20px;
   justify-content: space-evenly;
 }
 
@@ -20,13 +17,41 @@
   height: 70%;
   width: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .content p {
   margin: 0px;
   font-size: smaller;
+  top: -28px;
+  position: relative;
 }
 
 .content span {
   font-size: smaller;
+  top: -28px;
+  position: relative;
+}
+
+.content button {
+  width: 100%;
+  top:0px;
+  position: relative;
+  height: 2em;
+  margin: 0px;
+  opacity: 0%;
+  border:none;
+  background-color: white;
+  transition-duration: 0.2s;
+}
+
+.content section:hover > button {
+  top: -28px;
+  opacity: 100%;
+}
+
+.content div {
+  position: fixed;
+  background-color: grey;
+  margin: auto;
 }
