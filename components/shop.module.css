@@ -2,10 +2,6 @@
   padding: 2vw;
 }
 
-.content {
-  font-size: 18px;
-}
-
 .content main {
   display: grid;
   grid-template-columns: repeat(auto-fill, 10em);
@@ -22,13 +18,11 @@
 
 .content p {
   margin: 0px;
-  font-size: smaller;
   top: -28px;
   position: relative;
 }
 
 .content span {
-  font-size: smaller;
   top: -28px;
   position: relative;
 }
@@ -50,8 +44,8 @@
   opacity: 100%;
 }
 
-.content div {
+/* .content div {
   position: fixed;
   background-color: grey;
   margin: auto;
-}
+}*/ 

@@ -4,6 +4,7 @@ import fsPromises from 'fs/promises';
 import path from 'path'
 import { Tab } from '@headlessui/react'
 import React, { useState } from 'react';
+import Head from 'next/head';
 import Image from 'next/future/image'
 export async function getStaticPaths() {
   // read products.json by path
@@ -38,10 +39,6 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export function changeImage(selection) {
-  this.setState({value: selection.target.value})
-}
-
 export default function Page(props) {  
   const [image, setImage] = useState(props.image)
   function changeImage(type) {
@@ -57,13 +54,16 @@ export default function Page(props) {
   }
 
   return (
-  <main>
+  <main className='max-w-screen-xl mx-auto px-4'>
+    <Head>
+      <title>HKGDA - {props.name}</title>
+    </Head>
     <Image src={image}
       width={2000}
       height={2000}
-      className="mx-auto sm:float-left max-w-[80%] sm:max-w-sm"
+      className="mx-auto sm:float-left w-[80%] sm:w-[45%]"
       />
-    <section>
+    <section className='p-4 overflow-hidden'>
       <h2>{props.name}</h2>
 
       {/* Display prices with styling */}
@@ -74,13 +74,14 @@ export default function Page(props) {
 
       {/* Display selection list if options exist */}
       <form>
-      <div style={props?.type ? {"display": "block"} : {"display": "none"}}>
+      <div style={props?.type ? {"display": "block"} : {"display": "none"}} className='pb-2'>
         <label htmlFor="type">Type&nbsp;&nbsp;</label>
         <select
           id="type"
           name="type"
           disabled={props?.type ? false : true}
           onChange={(e) => {changeImage(e.target.value)}}
+          className='border w-full md:w-1/2'
         >
           <option value="not_an_option">Choose an option</option>
           {props?.type?.map((type) => (
@@ -95,7 +96,11 @@ export default function Page(props) {
       </div>
       <div style={props?.size ? {"display": "block"} : {"display": "none"}}>
         <label htmlFor="size">Size&nbsp;&nbsp;&nbsp;</label>
-        <select id="size" name="size" disabled={props?.size ? false : true}>
+        <select
+          id="size"
+          name="size"
+          disabled={props?.size ? false : true}
+          className='border w-full md:w-1/2'>
           <option value="not_an_option">Choose an option</option>
           {props?.size?.map((size) => (
             <option
@@ -111,24 +116,24 @@ export default function Page(props) {
     </section>
 
     {/* show tabs if the information exists */}
-    <aside>
+    <aside className='clear-both sm:p-4'>
       <Tab.Group>
-        <Tab.List>
-          <Tab disabled={props?.information?.description ? false : true}>Description</Tab>
-          <Tab disabled={props?.information?.additional_information ? false : true}>Additional Information</Tab>
+        <Tab.List className='mb-2 text-center md:text-left'>
+          <Tab className='py-2 mr-4 hover:border-t-2 ui-selected:border-t-2 border-solid border-blue-500 transition-all' disabled={props?.information?.description ? false : true}>Description</Tab>
+          <Tab className='py-2 hover:border-t-2 ui-selected:border-t-2 border-solid border-blue-500 transition-all' disabled={props?.information?.additional_information ? false : true}>Additional Information</Tab>
         </Tab.List>
         <Tab.Panels>
           <Tab.Panel>{props?.information?.description}</Tab.Panel>
           <Tab.Panel>
-            <table>
+            <table className='w-full'>
               {/* Display table row only if additional information exists */}
               <tr style={props?.information?.additional_information?.type ? {} : {"display": "none"}}>
-                <td>Types</td>
-                <td>{props?.information?.additional_information?.type}</td>
+                <td className='px-2 align-top'>Types</td>
+                <td className='px-1 pb-1'>{props?.information?.additional_information?.type}</td>
               </tr>
               <tr style={props?.information?.additional_information?.size ? {} : {"display": "none"}}>
-                <td>Sizes</td>
-                <td>{props?.information?.additional_information?.size}</td>
+                <td className='px-2 align-top'>Sizes</td>
+                <td className='px-1'>{props?.information?.additional_information?.size}</td>
               </tr>
             </table>
           </Tab.Panel>
@@ -141,9 +146,10 @@ export default function Page(props) {
 
 Page.getLayout = function getLayout(page) {
   return (
-    <Layout>
+    <>
+      
       <Navheader/>
       {page}
-    </Layout>
+    </>
   )
 }

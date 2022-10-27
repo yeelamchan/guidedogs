@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Navheader from '../../components/navheader'
 export default function Index() {
   return (
-    <section className="orange">
+    <section className="orange mt-2">
       <h2>About Us</h2>
       <p>
       Hong Kong Guide Dogs Association (HKGDA) was established in 2011, with the aim to provide internationally accredited and professional service dogs, including guide dogs and Animal-Assisted Intervention (AAI) dogs. HKGDA is a registered charitable organization under IRD Section 88 in Hong Kong (Registration Number 91/11219). Upon its establishment, HKGDA has been actively engaging in exploring and preparing the introduction of guide dog services to Hong Kong. In 2018, HKGDA has expanded its services and has started the program of Animal-Assisted Intervention (AAI) to serve a wider scope of people in need.
