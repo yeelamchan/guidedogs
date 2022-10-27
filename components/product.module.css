@@ -8,7 +8,7 @@
   white-space: pre-line;  
 }
 
-.content img {
+/* .content img {
   max-width: 90vw;
   max-height: 90vw;
   display: block;
@@ -20,7 +20,7 @@
   max-width: 40vw;
   max-height: 40vw;
   float:left;
-}}
+}} */
 
 .content section {
   overflow: hidden;
@@ -34,7 +34,6 @@
 .content select {
   padding: 2px;
   width: 100%;
-  
 }
 
 .content aside {

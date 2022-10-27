@@ -25,6 +25,16 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/aboutus": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/aboutus.js"
+    ],
+    "/aboutus/history": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/aboutus/history.js"
+    ],
     "/shop": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

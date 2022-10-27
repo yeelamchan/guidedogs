@@ -61,20 +61,21 @@ export default function Page(props) {
     <Image src={image}
       width={2000}
       height={2000}
+      className="mx-auto sm:float-left max-w-[80%] sm:max-w-sm"
       />
     <section>
       <h2>{props.name}</h2>
 
       {/* Display prices with styling */}
-      <span style={props.onsale ? {"text-decoration": "line-through"} : {"text-decoration": "none"}}>${props.price.old_price}</span>
-      <span style={props.onsale ? {"font-weight": "bold"} : {"display": "none"}}>&nbsp;&nbsp;${props.price.new_price}</span>
+      <span style={props.onsale ? {"textDecoration": "line-through"} : {"textDecoration": "none"}}>${props.price.old_price}</span>
+      <span style={props.onsale ? {"fontWeight": "bold"} : {"display": "none"}}>&nbsp;&nbsp;${props.price.new_price}</span>
 
       <p>{props?.information?.blurb}</p>
 
       {/* Display selection list if options exist */}
       <form>
       <div style={props?.type ? {"display": "block"} : {"display": "none"}}>
-        <label for="type">Type&nbsp;&nbsp;</label>
+        <label htmlFor="type">Type&nbsp;&nbsp;</label>
         <select
           id="type"
           name="type"
@@ -93,7 +94,7 @@ export default function Page(props) {
         </select>
       </div>
       <div style={props?.size ? {"display": "block"} : {"display": "none"}}>
-        <label for="size">Size&nbsp;&nbsp;&nbsp;</label>
+        <label htmlFor="size">Size&nbsp;&nbsp;&nbsp;</label>
         <select id="size" name="size" disabled={props?.size ? false : true}>
           <option value="not_an_option">Choose an option</option>
           {props?.size?.map((size) => (
