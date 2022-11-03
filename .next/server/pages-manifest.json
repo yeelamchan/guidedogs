@@ -7,7 +7,6 @@
   "/services/breeding": "pages/services/breeding.js"
 =======
   "/shop/product/[slug]": "pages/shop/product/[slug].js",
-  "/shop": "pages/shop.js",
   "/services": "pages/services.js"
 >>>>>>> shop
 }

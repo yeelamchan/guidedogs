@@ -132,9 +132,13 @@
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
 <<<<<<< HEAD
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = function() { return "d00d39645af65235"; }
 =======
 /******/ 		__webpack_require__.h = function() { return "9d930a36eea83108"; }
+>>>>>>> shop
+=======
+/******/ 		__webpack_require__.h = function() { return "2839c37e92952f8c"; }
 >>>>>>> shop
 /******/ 	}();
 /******/ 	
