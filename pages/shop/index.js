@@ -71,14 +71,14 @@ export default function Page(props) {
       <Dialog
         open={modal.show}
         onClose={() => setModal({show: false})}
-        className="fixed h-screen w-screen inset-0 bg-neutral-900/50 overflow-scroll"
+        className="fixed h-screen w-screen inset-0 bg-neutral-900/50"
       >
         <Dialog.Panel className="bg-white absolute w-2/3 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 max-h-screen">
           <Image
               src={image}
               width={2000}
               height={2000}
-              className='object-fill mx-auto w-3/4 md:w-1/2 object-left-top md:float-left'
+              className='object-fill mx-auto w-full sm:w-3/4 md:w-1/2 object-left-top md:float-left'
             />
 
           <Dialog.Title className='overflow-hidden pt-4 pl-4'>{modal.data?.name}</Dialog.Title>
