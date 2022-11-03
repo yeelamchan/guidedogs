@@ -184,3 +184,20 @@ button.Sub {
   display: block;
   color: gray;
 }
+
+.btn.active {
+  margin: 0;
+  bottom: 20px;
+  right: 20px;
+  z-index: 21;
+  width: fit-content;
+  border: 2px solid currentColor;
+  background-color: transparent;
+  border-radius: 999px !important;
+  line-height: 2.1em;
+  position: fixed !important;
+  transition: color 0.3s opacity 0.3s transform 0.3s;
+  cursor: pointer;
+  display: none;
+  color: gray;
+}

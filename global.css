@@ -220,10 +220,12 @@ button [type='button'] {
 
 .slider {
   position: relative;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
+
 }
 
 .image {
