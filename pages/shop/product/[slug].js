@@ -54,12 +54,10 @@ export default function Page(props) {
 
   const [quantity, setQuantity] = useState(1)
 
-  
-
   return (
   <main className='max-w-screen-xl mx-auto px-4'>
     <Head>
-      <title>HKGDA - {props.name}</title>
+      <title>{props.name}</title>
     </Head>
     <Image src={image}
       width={2000}
@@ -158,7 +156,6 @@ export default function Page(props) {
 Page.getLayout = function getLayout(page) {
   return (
     <>
-      
       <Navheader/>
       {page}
     </>
