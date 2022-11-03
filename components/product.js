@@ -1,5 +1,9 @@
 import Head from 'next/head'
+<<<<<<< HEAD
 import styles from './layout.module.css'
+=======
+import styles from './product.module.css'
+>>>>>>> shop
 
 export default function Layout({ children }) {
   return (

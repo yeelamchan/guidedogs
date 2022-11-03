@@ -7,7 +7,11 @@ export default function Layout({ children }) {
       <Head>
         <title>HKGDA</title>
       </Head>
+<<<<<<< HEAD
       <main className={styles.main}>
+=======
+      <main className='max-w-screen-xl mx-auto'>
+>>>>>>> shop
         <div className={styles.content}>{children}</div>
       </main>
     </>

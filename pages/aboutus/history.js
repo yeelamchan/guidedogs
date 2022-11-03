@@ -19,9 +19,9 @@ export default function Index() {
       <p>
         The photo below is Luke saying goodbye to yellow female guide dog Winta before she headed off for her new life as one of the first guide dogs in Hong Kong in 1975. The Guide Dog Instructor (in checked pants) is Luke’s proud dad John.
       </p>
-      <figure>
-        <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/09/17015813_1356418367754406_8895513629618830718_o.jpg" alt="A child kneeling in front of a dog with a guide dog's harness."/>
-        <figcaption>Photo shared by the Gosling family</figcaption>
+      <figure className='max-w-sm mx-auto'>
+        <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/09/17015813_1356418367754406_8895513629618830718_o.jpg" alt="A child kneeling in front of a dog with a guide dog's harness." className='mx-auto'/>
+        <figcaption className='text-center'>Photo shared by the Gosling family</figcaption>
     </figure>
       
     </section>

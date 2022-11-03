@@ -25,15 +25,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/services/breeding": [
+    "/services": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/services/breeding.js"
+      "static/chunks/pages/services.js"
     ],
-    "/services/fostering": [
+    "/shop": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/services/fostering.js"
+      "static/chunks/pages/shop.js"
+    ],
+    "/shop/product/[slug]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/shop/product/[slug].js"
     ]
   },
   "ampFirstPages": []
