@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/services.js"
     ],
-    "/shop/product/[slug]": [
+    "/supportus": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/shop/product/[slug].js"
+      "static/chunks/pages/supportus.js"
     ]
   },
   "ampFirstPages": []

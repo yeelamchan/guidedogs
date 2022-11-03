@@ -5,8 +5,8 @@ import Link from 'next/link'
 import Navheader from '../../components/navheader'
 export default function Page() {
   return (
-    <section className="green">
-      <h2>Aftercare Services</h2>
+    <section className="mt-4">
+      <h2 className='text-green-500'>Aftercare Services</h2>
         <p>Placeholder</p>
     </section>
   )
@@ -16,60 +16,49 @@ Page.getLayout = function getLayout(page) {
   return (
     <Layout>
         <Navheader/>
-      <Sidebar>
-       <Links>
-          <Link href='/services'>
-            <a>Guide Dogs</a>
-          </Link>
-        </Links>
-         <Links>
-          <Link href='/services/breeding'>
-            <a>Breeding Program</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/services/fostering'>
-            <a>Puppy Raiser / Boarder / Temporary Home Program</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/services/training'>
-            <a>Guide Dog Training</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/services/matching'>
-            <a>Matching With User</a>
-          </Link>
-        </Links>
+        <Sidebar>
         {/* Add accent color to active link */}
-        <div style={{'backgroundColor':'green', 'color':'white'}}><Links>
-          <Link href='/services/aftercare'>
-            <a>Aftercare Services</a>
-          </Link>
-        </Links></div>
-        <Links>
-          <Link href='/services/adoption'>
-            <a>Guide Dogs Adoption</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/services/welfare'>
-            <a>Animal Welfare</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/services/education'>
-            <a>Public Education</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/services/aai'>
-            <a>Animal Assisted Interventions (AAI)</a>
-          </Link>
-        </Links>
+        <Link href='/services'>
+          <Links>Guide Dogs</Links>
+        </Link>
+      
+        <Link href='/services/breeding'>
+          <Links>Breeding Program</Links>
+        </Link>
+      
+        <Link href='/services/fostering'>
+          <Links>Puppy Raiser / Boarder / Temporary Home Program</Links>
+        </Link>
+      
+        <Link href='/services/training'>
+          <Links>Guide Dog Training</Links>
+        </Link>
+      
+        <Link href='/services/matching'>
+          <Links>Matching With User</Links>
+        </Link>
+      
+        <div className='bg-green-500 text-white'><Link href='/services/aftercare'>
+          <Links>Aftercare Services</Links>
+        </Link></div>
+      
+        <Link href='/services/adoption'>
+          <Links>Guide Dogs Adoption</Links>
+        </Link>
+      
+        <Link href='/services/welfare'>
+          <Links>Animal Welfare</Links>
+        </Link>
+      
+        <Link href='/services/education'>
+          <Links>Public Education</Links>
+        </Link>
+      
+        <Link href='/services/aai'>
+          <Links>Animal Assisted Interventions (AAI)</Links>
+        </Link>
       </Sidebar>
-      <div>{page}</div>
+      {page}
     </Layout>
   )
 }

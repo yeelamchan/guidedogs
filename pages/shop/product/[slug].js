@@ -4,7 +4,7 @@ import path from 'path'
 import { Tab } from '@headlessui/react'
 import React, { useState } from 'react';
 import Head from 'next/head';
-import Image from 'next/future/image'
+import Image from 'next/image'
 export async function getStaticPaths() {
   // read products.json by path
   const filePath = path.join(process.cwd(), 'products.json');

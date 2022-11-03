@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-import Layout from '../../components/layout'
-import Navheader from '../../components/navheader'
-export default function Page() {
-  return (
-    <section className="orange">
-      
-    </section>
-=======
 import Navheader from '../../components/navheader'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/future/image'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 
@@ -26,17 +17,6 @@ export async function getStaticProps() {
     props: objectData
   }
 }
-
-const styleDialog = {
-  position:'fixed',
-  backgroundColor:'white',
-  top: '50%',
-  left:'50%',
-  transform: 'translate(-50%, -50%)'
-  
-}
-
-
 
 export default function Page(props) {
   const products = props.products;
@@ -62,6 +42,8 @@ export default function Page(props) {
       }
     }
   }
+
+  const [quantity, setQuantity] = useState(1)
   
   return (
     <main className='max-w-screen-xl mx-auto'>
@@ -69,9 +51,7 @@ export default function Page(props) {
       {products.map(product =>
         <section key={product.id} className='group'>
           <Link href={`/shop/product/${product.slug}`}>
-            <a>
               <Image src={product.image} width={2000} height={2000} className='h-[70%] w-[80%] object-cover mx-auto'/>
-            </a>
           </Link>
           <button
             key={product.id}
@@ -93,7 +73,7 @@ export default function Page(props) {
         onClose={() => setModal({show: false})}
         className="fixed h-screen w-screen inset-0 bg-neutral-900/50"
       >
-        <Dialog.Panel className="bg-white pr-4 w-2/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <Dialog.Panel className="bg-white pr-4 w-full sm:w-2/3 lg:w-1/2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <Image
               src={image}
               width={2000}
@@ -143,12 +123,19 @@ export default function Page(props) {
                 ))}
               </select>
             </div>
+
+            <div className='mt-4'>
+              <input type='button' value='-' className='border bg-gray-100 px-2 py-2' onClick={() => quantity != 1 ? setQuantity(quantity - 1) : setQuantity(1)}/>
+              <input type="number" id="quantity" name="quantity" value={quantity} inputMode='numeric' className='border w-8 text-center py-2' onChange={(e) => setQuantity(e.target.value)}/>
+              <input type='button' value='+' className='border bg-gray-100 px-2 py-2 mr-4' onClick={() => setQuantity(+quantity + 1)}/>
+
+              <button type='submit' className='bg-orange-600 px-4 py-2 font-bold text-white'>Add To Cart</button>
+            </div>
           </form>
           </Dialog.Description>
         </Dialog.Panel>
       </Dialog>
     </main>
->>>>>>> shop
   )
 }
 

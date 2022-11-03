@@ -6,8 +6,8 @@
   }
 
 .links {
-    padding:1em;
-    border-bottom: lightgray 1px solid;
+    padding:0.6em;
+    border-top: lightgray 1px solid;
 }
 
 .links:hover {

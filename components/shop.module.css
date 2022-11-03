@@ -1,33 +1,4 @@
 .main {
-<<<<<<< HEAD
-    padding: 2vw;
-  }
-  
-  .title,
-  .description {
-    text-align: center;
-  }
-  
-  .content {
-    padding: 0 2vw;
-    font-size: 18px;
-  }
-  
-  @media only screen and (min-width: 768px) {.content div {
-    overflow:hidden;
-  }}
-
-  .content div {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 10em);
-    grid-template-rows: 15em;
-  }
-  
-  .content img {
-    height: 70%;
-    width: 100%;
-  }
-=======
   padding: 2vw;
 }
 
@@ -78,4 +49,3 @@
   background-color: grey;
   margin: auto;
 }*/ 
->>>>>>> shop

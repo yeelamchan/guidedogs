@@ -2,23 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -29,31 +12,37 @@ a {
   }
 }
 
-p {
-  margin-bottom: 1em;
-  white-space: pre-line;
-}
+@layer base {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
 
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
-}
+  * {
+    white-space: pre-line;
+  }
 
-h3 {
-  font-size: 1.25em;
-  margin-bottom: 0.5em;
-}
+  a {
+    text-decoration: none;
+  }
 
-.orange h2, .orange h3 {
-  color:orange;
-}
-
-.green h2, .green h3 {
-  color:green;
-}
-
-.purple h2, .purple h3 {
-  color:purple;
+  p {
+    margin-bottom: 1em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight:bold;
+  }
+  
+  h3 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+  }
 }
 
 @layer utilities {

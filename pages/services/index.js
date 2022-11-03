@@ -5,27 +5,10 @@ import Link from 'next/link'
 import Navheader from '../../components/navheader'
 export default function Page() {
   return (
-    <section className="green">
-      {/* Add accent color to headings */}
-      <style jsx>{`
-        @media only screen and (min-width: 768px) {img {
-            width: 250px;
-            float:left;
-        }}
-
-        img {
-            display:block;
-            margin:auto;
-        }
-
-        div {
-            overflow:hidden;
-            padding-left:1em;
-        }
-      `}</style>
-      <h2>Guide Dogs</h2>
-        <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/02/DSC08592-683x1024.jpg" alt="使用者及其黃色導盲犬，笑著向前走 User and his yellow guide dog walk forward smiling"/>
-        <div>
+    <section className="mt-4">
+      <h2 className='text-green-500'>Guide Dogs</h2>
+        <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/02/DSC08592-683x1024.jpg" alt="使用者及其黃色導盲犬，笑著向前走 User and his yellow guide dog walk forward smiling" className='display-block md:float-left mx-auto sm:mx-none sm:max-w-xs'/>
+        <div className='pt-4 md:pt-0 md:pl-4 overflow-hidden'>
         <p>
         Guide dogs are trained by professionals to provide services for the visually impaired to improve their mobility and safety, while acting as their companion. A Guide Dog can lead a visually impaired person to his destination safely, avoiding obstacles and irregularities on the road.
         </p>
@@ -52,58 +35,49 @@ Page.getLayout = function getLayout(page) {
         <Navheader/>
       <Sidebar>
         {/* Add accent color to active link */}
-        <div style={{'backgroundColor':'green', 'color':'white'}}><Links>
+        <div className='bg-green-500 text-white'>
           <Link href='/services'>
-            <a>Guide Dogs</a>
+            <Links>Guide Dogs</Links>
           </Link>
-        </Links></div>
-        <Links>
+        </div>
+        
           <Link href='/services/breeding'>
-            <a>Breeding Program</a>
+            <Links>Breeding Program</Links>
           </Link>
-        </Links>
-        <Links>
+        
           <Link href='/services/fostering'>
-            <a>Puppy Raiser / Boarder / Temporary Home Program</a>
+            <Links>Puppy Raiser / Boarder / Temporary Home Program</Links>
           </Link>
-        </Links>
-        <Links>
+        
           <Link href='/services/training'>
-            <a>Guide Dog Training</a>
+            <Links>Guide Dog Training</Links>
           </Link>
-        </Links>
-        <Links>
+        
           <Link href='/services/matching'>
-            <a>Matching With User</a>
+            <Links>Matching With User</Links>
           </Link>
-        </Links>
-        <Links>
+        
           <Link href='/services/aftercare'>
-            <a>Aftercare Services</a>
+            <Links>Aftercare Services</Links>
           </Link>
-        </Links>
-        <Links>
+        
           <Link href='/services/adoption'>
-            <a>Guide Dogs Adoption</a>
+            <Links>Guide Dogs Adoption</Links>
           </Link>
-        </Links>
-        <Links>
+        
           <Link href='/services/welfare'>
-            <a>Animal Welfare</a>
+            <Links>Animal Welfare</Links>
           </Link>
-        </Links>
-        <Links>
+        
           <Link href='/services/education'>
-            <a>Public Education</a>
+            <Links>Public Education</Links>
           </Link>
-        </Links>
-        <Links>
+        
           <Link href='/services/aai'>
-            <a>Animal Assisted Interventions (AAI)</a>
+            <Links>Animal Assisted Interventions (AAI)</Links>
           </Link>
-        </Links>
       </Sidebar>
-      <div>{page}</div>
+      {page}
     </Layout>
   )
 }

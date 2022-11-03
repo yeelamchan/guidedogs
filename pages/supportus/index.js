@@ -5,8 +5,8 @@ import Link from 'next/link'
 import Navheader from '../../components/navheader'
 export default function Page() {
   return (
-    <section className="purple">
-      <h2>Volunteer Program</h2>
+    <section className="mt-4">
+      <h2 className='text-purple-500'>Volunteer Program</h2>
         <p>Placeholder</p>
     </section>
   )
@@ -18,43 +18,43 @@ Page.getLayout = function getLayout(page) {
         <Navheader/>
       <Sidebar>
        {/* Add accent color to active link */}
-        <div style={{'backgroundColor':'purple', 'color':'white'}}><Links>
+        <div className='bg-purple-500 text-white'>
           <Link href='/supportus'>
-            <a>Volunteer Program</a>
+            <Links>Volunteer Program</Links>
           </Link>
-        </Links></div>
-        <Links>
+        </div>
+        
           <Link href='/services/general'>
-            <a>General Volunteering</a>
+            <Links>General Volunteering</Links>
           </Link>
-        </Links>
-        <Links>
+        
+        
           <Link href='/services/seminar'>
-            <a>Guide Dog Seminar Speakers</a>
+            <Links>Guide Dog Seminar Speakers</Links>
           </Link>
-        </Links>
-        <Links>
+        
+        
           <Link href='/services/raising'>
-            <a>Puppy Raising & Boarder Program</a>
+            <Links>Puppy Raising & Boarder Program</Links>
           </Link>
-        </Links>
-        <Links>
+        
+        
           <Link href='/services/donation'>
-            <a>Donation and Sponsorship</a>
+            <Links>Donation and Sponsorship</Links>
           </Link>
-        </Links>
-        <Links>
+        
+        
           <Link href='/services/sticker'>
-            <a>Welcome Sticker and Donation Box</a>
+            <Links>Welcome Sticker and Donation Box</Links>
           </Link>
-        </Links>
-        <Links>
+        
+        
           <Link href='/services/applications'>
-            <a>Applications & Downloads</a>
+            <Links>Applications & Downloads</Links>
           </Link>
-        </Links>
+        
       </Sidebar>
-      <div>{page}</div>
+      {page}
     </Layout>
   )
 }

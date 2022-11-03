@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Navheader from '../../components/navheader'
 export default function Index() {
   return (
-    <section className="orange">
+    <section className='mt-4'>
       <style jsx>{`
         td > img{
           width:200px;
@@ -17,20 +17,20 @@ export default function Index() {
         }
       `}</style>
       
-      <h2>Management Board Members</h2>
-      <table>
+      <h2 className='text-orange-600'>Management Board Members</h2>
+      <table className='table-auto'>
       <tbody>
         <tr>
           <td><img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/09/Jonathan-Chow-2-300x300.jpg"/></td>
-          <td><h4>Chairperson</h4><p>Mr. CHOW Jonathan Edward Chun Chung</p></td>
+          <td><h4 className='font-bold text-lg'>Chairperson</h4><p>Mr. CHOW Jonathan Edward Chun Chung</p></td>
         </tr>
         <tr>
           <td><img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/05/Kirk-Wong.jpg"/></td>
-          <td><h4>Vice-Chairperson</h4><p>Mr. WONG King Wai, Kirk</p></td>
+          <td><h4 className='font-bold text-lg'>Vice-Chairperson</h4><p>Mr. WONG King Wai, Kirk</p></td>
         </tr>
         <tr>
           <td><img src="https://www.guidedogs.org.hk/wp-content/uploads/2019/09/LWP.jpg"/></td>
-          <td><h4>Immediate Past Chairperson & Chairperson of Communication and Fund Raising Committee</h4><p>Mr. LAM Wai Pong</p></td>
+          <td><h4 className='font-bold text-lg'>Immediate Past Chairperson & Chairperson of Communication and Fund Raising Committee</h4><p>Mr. LAM Wai Pong</p></td>
         </tr>
       </tbody>
       </table>
@@ -43,38 +43,34 @@ Index.getLayout = function getLayout(page) {
     <Layout>
       <Navheader/>
       <Sidebar>
-        <Links>
-          <Link href='/aboutus'>
-            <a>About Us</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/aboutus/history'>
-            <a>History</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/aboutus/awards'>
-            <a>Honour and Awards</a>
-          </Link>
-        </Links>
-        <div style={{'backgroundColor':'orange', 'color':'white'}}><Links>
-          <Link href='/aboutus/management'>
-            <a>Management Board Members, Associate Members and Honorary Advisors</a>
-          </Link>
-        </Links></div>
-        <Links>
-          <Link href='/aboutus/sponsors'>
-            <a>Sponsors and Supporters</a>
-          </Link>
-        </Links>
-        <Links>
+        {/* Add accent color to active link */}
+        <Link href='/aboutus'>
+          <Links>About Us</Links>
+        </Link>
+      
+        <Link href='/aboutus/history'>
+          <Links>History</Links>
+        </Link>
+      
+        <Link href='/aboutus/awards'>
+          <Links>Honour and Awards</Links>
+        </Link>
+      
+        <div className='bg-orange-600 text-white'><Link href='/aboutus/management'>
+          <Links>Management Board Members, Associate Members and Honorary Advisors</Links>
+        </Link></div>
+        
+        <Link href='/aboutus/sponsors'>
+          <Links>Sponsors and Supporters</Links>
+        </Link>
+        
+        
           <Link href='/aboutus/reports'>
-            <a>Annual and Financial Report</a>
+            <Links>Annual and Financial Report</Links>
           </Link>
-        </Links>
+        
       </Sidebar>
-      <div>{page}</div>
+      {page}
     </Layout>
   )
 }

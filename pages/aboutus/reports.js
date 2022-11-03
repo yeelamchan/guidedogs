@@ -16,36 +16,30 @@ Index.getLayout = function getLayout(page) {
     <Layout>
       <Navheader/>
       <Sidebar>
-        <Links>
-          <Link href='/aboutus'>
-            <a>About Us</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/aboutus/history'>
-            <a>History</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/aboutus/awards'>
-            <a>Honour and Awards</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/aboutus/management'>
-            <a>Management Board Members, Associate Members and Honorary Advisors</a>
-          </Link>
-        </Links>
-        <Links>
-          <Link href='/aboutus/sponsors'>
-            <a>Sponsors and Supporters</a>
-          </Link>
-        </Links>
-        <div style={{'backgroundColor':'orange', 'color':'white'}}><Links>
-          <Link href='/aboutus/reports'>
-            <a>Annual and Financial Report</a>
-          </Link>
-        </Links></div>
+        {/* Add accent color to active link */}
+        <Link href='/aboutus'>
+          <Links>About Us</Links>
+        </Link>
+      
+        <Link href='/aboutus/history'>
+          <Links>History</Links>
+        </Link>
+      
+        <Link href='/aboutus/awards'>
+          <Links>Honour and Awards</Links>
+        </Link>
+      
+        <Link href='/aboutus/management'>
+          <Links>Management Board Members, Associate Members and Honorary Advisors</Links>
+        </Link>
+        
+        <Link href='/aboutus/sponsors'>
+          <Links>Sponsors and Supporters</Links>
+        </Link>
+        
+        <div className='bg-orange-600 text-white'><Link href='/aboutus/reports'>
+          <Links>Annual and Financial Report</Links>
+        </Link></div>
       </Sidebar>
       <div>{page}</div>
     </Layout>

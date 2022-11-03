@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
+
 
 export default function Layout({ children }) {
   return (
@@ -7,12 +7,8 @@ export default function Layout({ children }) {
       <Head>
         <title>HKGDA</title>
       </Head>
-<<<<<<< HEAD
-      <main className={styles.main}>
-=======
-      <main className='max-w-screen-xl mx-auto'>
->>>>>>> shop
-        <div className={styles.content}>{children}</div>
+      <main className='max-w-screen-xl mx-auto px-4'>
+        <div>{children}</div>
       </main>
     </>
   )
