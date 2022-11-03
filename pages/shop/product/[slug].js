@@ -1,5 +1,4 @@
 import Layout from '../../../components/layout.js'
-import Navheader from '../../../components/navheader'
 import fsPromises from 'fs/promises';
 import path from 'path'
 import { Tab } from '@headlessui/react'
@@ -157,7 +156,6 @@ export default function Page(props) {
 Page.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <Navheader/>
       {page}
     </Layout>
   )
