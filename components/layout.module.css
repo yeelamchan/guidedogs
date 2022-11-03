@@ -2,7 +2,7 @@
   padding: 2vw;
 }
 
-.title a {
+/* .title a {
   color: #0070f3;
   text-decoration: none;
 }
@@ -22,7 +22,7 @@
 .title,
 .description {
   text-align: center;
-}
+} */
 
 .content {
   padding: 0 2vw;
@@ -42,4 +42,145 @@
 
 .content figcaption {
   text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 75%;
+  margin: auto;
+}
+
+.header {
+  max-height: 100%;
+}
+
+.header ul {
+  list-style-type: none;  
+  display: flex;
+  margin-bottom: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.header li {
+  float: left;
+  
+}
+
+.header li.headerdivder {
+  border-left: 1px solid rgba(0,0,0,0.9);
+  height: 30px;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 7.5px;
+}
+
+.image {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.imagebox{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footlay{
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+  color: black;
+  font-size: 0.9em;
+}
+
+.footer div {
+  margin-bottom: 1.5em;
+  padding-bottom: 0 !important;
+  width: 100%;
+}
+
+.footer_p1 {
+  padding: 0 15px 30px;
+}
+
+.footHead {
+  font-weight: bolder;
+  margin-bottom: 1.3em;
+}
+
+.footContent {
+  margin-bottom: 1.3em;
+}
+
+.footContent a {
+  color: black;
+}
+
+.footSub {
+  color: #000;
+}
+
+.input_field {
+  display: inline;
+  margin-bottom: 12px;
+  font-weight: bolder;
+}
+
+.screen_reader_text {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+input.email {
+  max-width: 50%;
+}
+
+button.Sub {
+  background: #716464;
+  color: #fff;
+}
+
+.btmfoot {
+  background-color: black;
+  width: 100%;
+  color: white;
+  font-size: 0.8em;
+  padding: 10px 0 15px;
+}
+
+.btmfoottext {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  margin: 0;
+  bottom: 20px;
+  right: 20px;
+  z-index: 21;
+  width: fit-content;
+  border: 2px solid currentColor;
+  background-color: transparent;
+  border-radius: 999px !important;
+  line-height: 2.1em;
+  position: fixed !important;
+  transition: color 0.3s opacity 0.3s transform 0.3s;
+  cursor: pointer;
+  display: block;
+  color: gray;
 }
