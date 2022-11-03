@@ -2,7 +2,6 @@ import Layout from '../../components/layout'
 import Sidebar from '../../components/sidebar'
 import Links from '../../components/links'
 import Link from 'next/link'
-import Navheader from '../../components/navheader'
 export default function Page() {
   return (
     <section className="mt-4 overflow-hidden">      
@@ -25,7 +24,6 @@ export default function Page() {
 Page.getLayout = function getLayout(page) {
   return (
     <Layout>
-        <Navheader/>
       <Sidebar>
         {/* Add accent color to active link */}
         <Link href='/services'>

@@ -2,10 +2,9 @@ import Layout from '../../components/layout'
 import Sidebar from '../../components/sidebar'
 import Links from '../../components/links'
 import Link from 'next/link'
-import Navheader from '../../components/navheader'
 export default function Index() {
   return (
-    <section className='mt-4 overflow-hidden'>
+    <section className='mt-2 overflow-hidden'>
       <h2 className='text-orange-600'>History</h2>
       <p>
         Service animals and guide dogs have been referenced as early as the mid-16th  century. However, the first guide dog training school was established during World War I, to aid German military veterans who lost their vision as a result of the war. Interest in service dogs had become globally widespread thanks to Dorothy Eustis and Morris Frank, who trained the first four guide dogs in the UK. In 1934, the Guide Dogs for the Blind Association began operation in the UK, while the Seeing-Eye Program was kickstarted in the US soon after.
@@ -31,7 +30,6 @@ export default function Index() {
 Index.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <Navheader/>
       <Sidebar>
         {/* Add accent color to active link */}
         <Link href='/aboutus'>

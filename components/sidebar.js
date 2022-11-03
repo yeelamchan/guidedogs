@@ -1,9 +1,7 @@
-import styles from './sidebar.module.css'
-
 export default function Sidebar({ children }) {
   return (
     <>
-      <div className={styles.navi}>
+      <div className='md:float-left flex flex-col m-4'>
         {children}
       </div>
     </>

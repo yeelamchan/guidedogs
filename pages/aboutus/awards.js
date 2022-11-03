@@ -2,10 +2,9 @@ import Layout from '../../components/layout'
 import Sidebar from '../../components/sidebar'
 import Links from '../../components/links'
 import Link from 'next/link'
-import Navheader from '../../components/navheader'
 export default function Index() {
   return (
-    <section className='mt-4 overflow-hidden'>
+    <section className='mt-2 overflow-hidden'>
       <h2 className='text-orange-600'>Honour and Awards</h2>
       <h3 className='text-orange-600'>International Guide Dog Federation</h3>
       <img src="https://www.guidedogs.org.hk/wp-content/uploads/2021/03/IGDF.Logo_.Colours.jpg" className='max-w-sm'/>
@@ -25,7 +24,6 @@ export default function Index() {
 Index.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <Navheader/>
       <Sidebar>
         {/* Add accent color to active link */}
         <Link href='/aboutus'>

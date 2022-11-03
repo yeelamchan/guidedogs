@@ -2,13 +2,12 @@ import Layout from '../../components/layout'
 import Sidebar from '../../components/sidebar'
 import Links from '../../components/links'
 import Link from 'next/link'
-import Navheader from '../../components/navheader'
 export default function Page() {
   return (
-    <section className="mt-4">
+    <section className="mt-4 md:overflow-hidden">
       <h2 className='text-green-500'>Guide Dogs</h2>
-        <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/02/DSC08592-683x1024.jpg" alt="使用者及其黃色導盲犬，笑著向前走 User and his yellow guide dog walk forward smiling" className='display-block md:float-left mx-auto sm:mx-none sm:max-w-xs'/>
-        <div className='pt-4 md:pt-0 md:pl-4 overflow-hidden'>
+        <img src="https://www.guidedogs.org.hk/wp-content/uploads/2020/02/DSC08592-683x1024.jpg" alt="使用者及其黃色導盲犬，笑著向前走 User and his yellow guide dog walk forward smiling" className='display-block lg:float-left mx-auto md:mx-0 sm:max-w-xs'/>
+        <div className='pt-4 lg:pt-0 lg:pl-4 overflow-hidden'>
         <p>
         Guide dogs are trained by professionals to provide services for the visually impaired to improve their mobility and safety, while acting as their companion. A Guide Dog can lead a visually impaired person to his destination safely, avoiding obstacles and irregularities on the road.
         </p>
@@ -32,7 +31,6 @@ export default function Page() {
 Page.getLayout = function getLayout(page) {
   return (
     <Layout>
-        <Navheader/>
       <Sidebar>
         {/* Add accent color to active link */}
         <div className='bg-green-500 text-white'>

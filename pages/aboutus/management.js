@@ -2,10 +2,9 @@ import Layout from '../../components/layout'
 import Sidebar from '../../components/sidebar'
 import Links from '../../components/links'
 import Link from 'next/link'
-import Navheader from '../../components/navheader'
 export default function Index() {
   return (
-    <section className='mt-4'>
+    <section className='mt-2'>
       <style jsx>{`
         td > img{
           width:200px;
@@ -41,7 +40,6 @@ export default function Index() {
 Index.getLayout = function getLayout(page) {
   return (
     <Layout>
-      <Navheader/>
       <Sidebar>
         {/* Add accent color to active link */}
         <Link href='/aboutus'>
