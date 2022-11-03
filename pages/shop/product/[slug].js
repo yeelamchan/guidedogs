@@ -1,4 +1,3 @@
-import Layout from '../../../components/product'
 import Navheader from '../../../components/navheader'
 import fsPromises from 'fs/promises';
 import path from 'path'
@@ -53,6 +52,10 @@ export default function Page(props) {
     }
   }
 
+  const [quantity, setQuantity] = useState(1)
+
+  
+
   return (
   <main className='max-w-screen-xl mx-auto px-4'>
     <Head>
@@ -61,7 +64,7 @@ export default function Page(props) {
     <Image src={image}
       width={2000}
       height={2000}
-      className="mx-auto sm:float-left w-[80%] sm:w-[45%]"
+      className="mx-auto sm:float-left w-[80%] sm:w-[45%] sm:max-h-[50vh] object-scale-down"
       />
     <section className='p-4 overflow-hidden'>
       <h2>{props.name}</h2>
@@ -73,7 +76,7 @@ export default function Page(props) {
       <p>{props?.information?.blurb}</p>
 
       {/* Display selection list if options exist */}
-      <form>
+      <form  action='/send-data' method='post'>
       <div style={props?.type ? {"display": "block"} : {"display": "none"}} className='pb-2'>
         <label htmlFor="type">Type&nbsp;&nbsp;</label>
         <select
@@ -94,6 +97,7 @@ export default function Page(props) {
           ))}
         </select>
       </div>
+
       <div style={props?.size ? {"display": "block"} : {"display": "none"}}>
         <label htmlFor="size">Size&nbsp;&nbsp;&nbsp;</label>
         <select
@@ -112,6 +116,13 @@ export default function Page(props) {
           ))}
         </select>
       </div>
+      <div className='mt-4'>
+        <input type='button' value='-' className='border bg-gray-100 px-2 py-2' onClick={() => quantity != 1 ? setQuantity(quantity - 1) : setQuantity(1)}/>
+        <input type="number" id="quantity" name="quantity" value={quantity} inputMode='numeric' className='border w-8 text-center py-2' onChange={(e) => setQuantity(e.target.value)}/>
+        <input type='button' value='+' className='border bg-gray-100 px-2 py-2 mr-4' onClick={() => setQuantity(+quantity + 1)}/>
+
+        <button type='submit' className='bg-orange-600 px-4 py-2 font-bold text-white'>Add To Cart</button>
+      </div>
       </form>
     </section>
 
@@ -119,17 +130,17 @@ export default function Page(props) {
     <aside className='clear-both sm:p-4'>
       <Tab.Group>
         <Tab.List className='mb-2 text-center md:text-left'>
-          <Tab className='py-2 mr-4 hover:border-t-2 ui-selected:border-t-2 border-solid border-blue-500 transition-all' disabled={props?.information?.description ? false : true}>Description</Tab>
-          <Tab className='py-2 hover:border-t-2 ui-selected:border-t-2 border-solid border-blue-500 transition-all' disabled={props?.information?.additional_information ? false : true}>Additional Information</Tab>
+          <Tab className='py-2 mr-4 hover:border-t-2 ui-selected:border-t-2 border-solid border-blue-500 transition-all disabled:hidden' disabled={props?.information?.description ? false : true}>Description</Tab>
+          <Tab className='py-2 hover:border-t-2 ui-selected:border-t-2 border-solid border-blue-500 transition-all disabled:hidden' disabled={props?.information?.additional_information ? false : true}>Additional Information</Tab>
         </Tab.List>
         <Tab.Panels>
-          <Tab.Panel>{props?.information?.description}</Tab.Panel>
+          <Tab.Panel><p>{props?.information?.description}</p></Tab.Panel>
           <Tab.Panel>
             <table className='w-full'>
               {/* Display table row only if additional information exists */}
               <tr style={props?.information?.additional_information?.type ? {} : {"display": "none"}}>
                 <td className='px-2 align-top'>Types</td>
-                <td className='px-1 pb-1'>{props?.information?.additional_information?.type}</td>
+                <td className='px-1 pb-1'><p>{props?.information?.additional_information?.type}</p></td>
               </tr>
               <tr style={props?.information?.additional_information?.size ? {} : {"display": "none"}}>
                 <td className='px-2 align-top'>Sizes</td>

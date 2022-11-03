@@ -61,7 +61,7 @@ export default function Page(props) {
         <section key={product.id} className='group'>
           <Link href={`/shop/product/${product.slug}`}>
             <a>
-              <Image src={product.image} width={2000} height={2000} className='h-[70%] w-full object-cover'/>
+              <Image src={product.image} width={2000} height={2000} className='h-[70%] w-[80%] object-cover mx-auto'/>
             </a>
           </Link>
           <button
@@ -84,21 +84,21 @@ export default function Page(props) {
         onClose={() => setModal({show: false})}
         className="fixed h-screen w-screen inset-0 bg-neutral-900/50"
       >
-        <Dialog.Panel className="bg-white pr-4 w-2/3 h-2/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <Dialog.Panel className="bg-white pr-4 w-2/3 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <Image
               src={image}
               width={2000}
               height={2000}
-              className='h-full w-1/2 object-cover float-left pr-4'
+              className='object-fill w-1/2 object-left-top float-left pr-4'
             />
           <Dialog.Title className='pt-4'>{modal.data?.name}</Dialog.Title>
           
-          <Dialog.Description>
+          <Dialog.Description className='overflow-hidden'>
             <span style={modal.data?.onsale ? {"textDecoration": "line-through"} : {"textDecoration": "none"}}>${modal.data?.price.old_price}</span>
             <span style={modal.data?.onsale ? {"fontWeight": "bold"} : {"display": "none"}}>&nbsp;&nbsp;${modal.data?.price.new_price}</span>
 
             <p>{modal.data?.information?.blurb}</p>
-          </Dialog.Description>
+          
           
           <form>
             <div style={modal.data?.type ? {"display": "block"} : {"display": "none"}}>
@@ -135,6 +135,7 @@ export default function Page(props) {
               </select>
             </div>
           </form>
+          </Dialog.Description>
         </Dialog.Panel>
       </Dialog>
     </main>

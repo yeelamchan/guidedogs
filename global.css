@@ -55,3 +55,10 @@ h3 {
 .purple h2, .purple h3 {
   color:purple;
 }
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    @apply appearance-none;
+  }
+}
